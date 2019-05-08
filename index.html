@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <h1>Pixel Art Maker</h1>
+    <div class="row">
+      <div class="column">
+        <div class="inputs">
+          <h2>Choose Grid Size</h2>
+          <!-- class names all lower case and delimited with hyphens per Udacity Frontend Nanodegree Style Guide (CSS page) -->
+          <form class="size-picker">
+
+            height:
+            <input type="number" class="input-height" name="height" min="1" value="10" >
+            width:
+            <input type="number" class="input-width" name="width" min="1" value="10">
+            <input type="submit" class="submit-button" value="Submit Query">
+
+          </form>
+          <h2>Pick A color</h2>
+          <input type="color" class="color-picker" value="#6aa5b8">
+
+        </div>
+      </div>
+      <div class="column">
+            <h2>Design Canvas</h2>
+          <table class="pixel-canvas"></table>
+        <br>
+      </div>
+    </div>
+    <script src="designs.js"></script>
+  </body>
+</html>
